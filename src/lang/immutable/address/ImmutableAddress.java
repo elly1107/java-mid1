@@ -1,20 +1,18 @@
 package lang.immutable.address;
 
-public class Address {
+public class ImmutableAddress {
+    private final String value;
 
-    private String value;
-
-    public Address(String value) {
+    //생성자: 인스턴스 생성할 때 : Address("d")
+    public ImmutableAddress(String value) {
         this.value = value;
     }
 
+    //getter 현재 value 값 return
     public String getValue() {
         return value;
     }
 
-    public void setValue(String value) {
-        this.value = value;
-    }
 
     @Override
     public String toString() {
