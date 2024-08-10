@@ -2,12 +2,12 @@ package nested.inner.ex1;
 
 public class Car {
     private String model;
-    private int chargedLevel;
+    private int chargeLevel;
     private Engine engine;
 
-    public Car(String model, int chargedLevel, Engine engine) {
+    public Car(String model, int chargeLevel) {
         this.model = model;
-        this.chargedLevel = chargedLevel;
+        this.chargeLevel = chargeLevel;
         this.engine = new Engine(this);
     }
 
@@ -16,7 +16,7 @@ public class Car {
     }
 
     public int getChargedLevel() {
-        return chargedLevel;
+        return chargeLevel;
     }
 
     public void start(){
