@@ -2,7 +2,7 @@ package nested.nested.local;
 
 import java.lang.reflect.Field;
 
-public class LocalOuterV3 {
+public class LocalOuterV4 {
     private int outInstanceVar = 3;
 
     public Printer process(int paramVar) {
@@ -37,7 +37,7 @@ public class LocalOuterV3 {
     }
 
     public static void main(String[] args) {
-        LocalOuterV3 localOuter = new LocalOuterV3();
+        LocalOuterV4 localOuter = new LocalOuterV4();
         Printer printer = localOuter.process(2);
         //printer.print()를 나중에 실행. process()의 스택 프레임이 사라진 이후에 실행
         printer.print();
