@@ -22,7 +22,7 @@ public class NetworkServiceV3_2 {
         /* 이런 방식도 가능
         catch (ConnectExceptionV3 | SendExceptionV3 exceptionV3) {
             System.out.println(e.getMessage);
-        }*/ finally {
+        }*/finally {
             client.disconnect();
         }
     }
